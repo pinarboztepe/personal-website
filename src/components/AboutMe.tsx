@@ -12,7 +12,7 @@ export default function AboutMe() {
                         <Image src="/images/pinar_b.jpeg" alt="Pinar picture" width={300} height={300} className="rounded-2xl shadow-lg shadow-black p-1 bg-gray" />
                     </div>
                     <div className="lg:w-1/2">
-                        <p className="text-xl text-gray-600">I'm Pinar, a passionate full-stack developer based in London with a knack for blending creativity and technology. When I'm not coding, you can find me indulging in my love for art—painting and sculpting my thoughts into reality. As a drummer, I bring rhythm and energy into my life, and I stay active with various sports to keep my mind and body in sync. Always exploring new challenges and pushing the boundaries of what's possible!</p>
+                        <p className="text-xl text-gray-600">I&apos;m Pinar, a passionate full-stack developer based in London with a knack for blending creativity and technology. When I&apos;m not coding, you can find me indulging in my love for art—painting and sculpting my thoughts into reality. As a drummer, I bring rhythm and energy into my life, and I stay active with various sports to keep my mind and body in sync. Always exploring new challenges and pushing the boundaries of what&apos;s possible!</p>
                     </div>
                 </div>
             </div>

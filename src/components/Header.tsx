@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";

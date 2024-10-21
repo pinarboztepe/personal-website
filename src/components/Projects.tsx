@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import { NextPage } from "next";
 import Link from "next/link";
 
 export default function Projects() {
@@ -21,7 +20,7 @@ export default function Projects() {
                         <Image src="/images/spare_pals.png" alt="Spare Pals image" width={300} height={200} className="rounded-lg shadow-lg transition-transform transform hover:scale-105 shadow-black p-1 bg-gray grayscale hover:filter-none" />
                     </Link>
                     <h2 className="text-xl text-gray-800 font-semibold mt-4">Spare Pals</h2>
-                    <p className="text-center text-gray-600 mt-2">Spare Pals offers a unique service catering to various needs, whether for leisurely activities, daily outings, or even hospital visits. Simply visit the website to access a seamless booking system: check the availability of Pals, select the specific dates and hours needed. Additionally, you have the option to create an account for your own Pals to be hired by others, expanding the network of available companions. Seamlessly blending technology and human connection, Spare Pals transforms into a stage where stories unfold and memories are etched into the fabric of time. Every interaction involves payment, as users hire like-minded individuals on an hourly basis. It's a symphony of shared experiences, with each interaction painting a masterpiece of profound connection and lasting resonance.</p>
+                    <p className="text-center text-gray-600 mt-2">Spare Pals offers a unique service catering to various needs, whether for leisurely activities, daily outings, or even hospital visits. Simply visit the website to access a seamless booking system: check the availability of Pals, select the specific dates and hours needed. Additionally, you have the option to create an account for your own Pals to be hired by others, expanding the network of available companions. Seamlessly blending technology and human connection, Spare Pals transforms into a stage where stories unfold and memories are etched into the fabric of time. Every interaction involves payment, as users hire like-minded individuals on an hourly basis. It&apos;s a symphony of shared experiences, with each interaction painting a masterpiece of profound connection and lasting resonance.</p>
                 </div>
             </div>
         </section>
