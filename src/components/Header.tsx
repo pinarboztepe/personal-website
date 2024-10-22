@@ -11,10 +11,12 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md fixed top-0 w-full z-50">
       <div className="container flex items-center justify-between px-6 py-4 text-2xl font-bold text-black">
-        <Image src="/images/logo.jpeg" alt="Logo" width={100} height={100}></Image>
+      <div className="z-50">
+        <Image src="/images/logo.jpeg" alt="Logo" width={100} height={100} className="z-50"></Image>
+      </div>
 
         {/* Hamburger menu for mobile */}
-        <div className="lg:hidden">
+        <div className="lg:hidden z-50">
           <button
             onClick={() => {
               setIsOpen(!isOpen);
@@ -57,37 +59,37 @@ export default function Header() {
         <nav
           className={`${
             isOpen ? "block" : "hidden"
-          } lg:flex space-x-4 lg:space-x-6 items-center text-2xl font-bold text-gray-800`}
-        >
-          <ul className="flex space-x-8">
-            <li>
-              <Link href="#home" scroll={false} className=" hover:text-slate-500">Home</Link>
-            </li>
-            <li>
-              <Link href="#about" scroll={false} className=" hover:text-slate-500">About Me</Link>
-            </li>
-            <li>
-              <Link href="#projects" scroll={false} className=" hover:text-slate-500">Projects</Link>
-            </li>
-            <li>
-              <Link href="#contact" scroll={false} className=" hover:text-slate-500">Contact Me</Link>
-            </li>
-          </ul>
-
-          <div className="social">
-            <ul className="flex space-x-4 ml-10">
-                <li>
-                <Link href="https://github.com/pinarboztepe" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} size="lg" className="text-gray-500 hover:text-slate-400" />
-                </Link>
-                </li>
-                <li>
-                <Link href="https://www.linkedin.com/in/pinar-boztepe/" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-gray-500 hover:text-slate-400" />
-                </Link>
-                </li>
+          } lg:flex lg:space-x-6 lg:flex-row flex-col space-y-4 lg:space-y-0 absolute lg:static right-0 top-20 bg-white lg:bg-transparent w-full lg:w-auto lg:items-center text-2xl font-bold text-gray-800 lg:shadow-none shadow-lg z-50`}
+          >
+            <ul className="flex flex-col lg:flex-row lg:space-x-8 space-y-4 lg:space-y-0 text-center lg:text-left">
+              <li>
+                <Link href="#home" scroll={true} className=" hover:text-slate-500">Home</Link>
+              </li>
+              <li>
+                <Link href="#about" scroll={true} className=" hover:text-slate-500">About Me</Link>
+              </li>
+              <li>
+                <Link href="#projects" scroll={true} className=" hover:text-slate-500">Projects</Link>
+              </li>
+              <li>
+                <Link href="#contact" scroll={true} className=" hover:text-slate-500">Contact Me</Link>
+              </li>
             </ul>
-          </div>
+
+            <div className="social mt-4 lg:mt-0">
+              <ul className="flex space-x-4 justify-center lg:justify-start">
+                  <li>
+                  <Link href="https://github.com/pinarboztepe" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} size="lg" className="text-gray-500 hover:text-slate-400" />
+                  </Link>
+                  </li>
+                  <li>
+                  <Link href="https://www.linkedin.com/in/pinar-boztepe/" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-gray-500 hover:text-slate-400" />
+                  </Link>
+                  </li>
+              </ul>
+            </div>
         </nav>
       </div>
       <hr className="border-t border-black" />
