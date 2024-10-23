@@ -7,17 +7,15 @@ import AboutMe from "@/components/AboutMe";
 import ContactMe from "@/components/ContactMe";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import ThemeProvider from "@/components/ThemeProvider";
-import ThemeToggle from "@/components/ThemeToggle";
-import Merhaba from "@/components/Merhaba";
+// import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
     <ThemeProvider>
       
       <main className="relative">
-      <Merhaba />  
         <Header />
-        <ThemeToggle />
+        {/* <ThemeToggle /> */}
         <Hero />
         <Projects />
         <AboutMe />
