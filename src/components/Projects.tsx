@@ -12,7 +12,7 @@ export default function Projects() {
                 <div className="flex flex-col items-center mb-8">
                     {/* Link href="URL" */}
                     <Image src="/images/vempo.png" alt="Vempo image" width={300} height={200} className="rounded-lg shadow-lg transition-transform transform hover:scale-105 shadow-black p-1 bg-gray grayscale hover:filter-none" />
-                    <h2 className="text-xl text-gray-800 font-semibold mt-4">Vempo</h2>
+                    <h2 className="text-xl text-gray-800 dark:text-gray-200 font-semibold mt-4">Vempo</h2>
                     <p className="text-center text-gray-600 dark:text-gray-100 mt-2">This pioneering platform seamlessly fuses music and visual artistry, providing a transformative canvas where sound and sight converge. Immerse yourself in the creative process as you craft and personalize dynamic, synchronized shapes that dance harmoniously with your uploaded music. Each beat and note brings your visual creations to life, allowing your artistic vision to flourish in an enchanting symphony of color and motion. Explore the limitless possibilities of this innovative tool, where every composition becomes a unique masterpiece, reflecting your personal expression and artistic flair.</p>
                 </div>
                 <div className="flex flex-col items-center mb-8">
