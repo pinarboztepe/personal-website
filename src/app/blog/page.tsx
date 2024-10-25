@@ -6,7 +6,6 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 export default function Blog() {
     return (
         <main className="w-full p-6 bg-gray-200 dark:bg-zinc-800">
-            <hr className="border-t border-black dark:border-white w-full mb-8" />
             <section className="text-center"> 
                 <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">Blog</h1>
                 <p className="text-lg text-gray-600 dark:text-gray-100 mb-8">
