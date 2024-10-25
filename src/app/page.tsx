@@ -8,6 +8,7 @@ import ContactMe from "@/components/ContactMe";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import ThemeProvider from "@/components/ThemeProvider";
 // import ThemeToggle from "@/components/ThemeToggle";
+import Blog from "./blog/page";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Projects />
         <AboutMe />
         <ContactMe />
+        <Blog />
       </main>
       <Footer />
     </ThemeProvider>
