@@ -76,23 +76,28 @@ export default function Header() {
               <li>
                 <Link href="#contact" scroll={true} className=" hover:text-slate-500 dark:hover:text-slate-300">Contact Me</Link>
               </li>
+              <li>
+                  <Link href="/blog" className="hover:text-slate-500 dark:hover:text-slate-300">
+                    Blog
+                  </Link>
+                </li>
             </ul>
 
             <div className="social mt-4 lg:mt-0">
               <ul className="flex space-x-4 justify-center lg:justify-start">
-                  <li>
-                  <Link href="https://github.com/pinarboztepe" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faGithub} size="lg" className="text-gray-500 hover:text-slate-400 dark:text-gray-200 dark:hover:text-slate-300" />
-                  </Link>
-                  </li>
-                  <li>
-                  <Link href="https://www.linkedin.com/in/pinar-boztepe/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-gray-500 hover:text-slate-400 dark:text-gray-200 dark:hover:text-slate-300" />
-                  </Link>
-                  </li>
-                  <li>
-                    <ThemeToggle />
-                  </li>
+                <li>
+                <Link href="https://github.com/pinarboztepe" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faGithub} size="lg" className="text-gray-500 hover:text-slate-400 dark:text-gray-200 dark:hover:text-slate-300" />
+                </Link>
+                </li>
+                <li>
+                <Link href="https://www.linkedin.com/in/pinar-boztepe/" target="_blank" rel="noopener noreferrer">
+                  <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-gray-500 hover:text-slate-400 dark:text-gray-200 dark:hover:text-slate-300" />
+                </Link>
+                </li>
+                <li>
+                  <ThemeToggle />
+                </li>
               </ul>
             </div>
         </nav>
