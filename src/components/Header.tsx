@@ -11,7 +11,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white dark:bg-zinc-900 shadow-md w-full">
+    <header className="bg-white dark:bg-zinc-900 shadow-md w-full fixed z-40">
       <div className="container flex items-center justify-between px-6 py-4 text-2xl font-bold text-black dark:text-white">
       <div className="z-50 p-1 rounded-lg bg-white shadow-lg shadow-black dark:shadow-zinc-500">
         <Image src="/images/logo.jpeg" alt="Logo" width={100} height={100} className="rounded-full"></Image>
