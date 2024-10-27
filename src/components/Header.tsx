@@ -65,17 +65,22 @@ export default function Header() {
           >
             <ul className="flex flex-col lg:flex-row lg:space-x-8 space-y-4 lg:space-y-0 text-center lg:text-left">
               <li>
-                <Link href="#home" scroll={true} className=" hover:text-slate-500 dark:hover:text-slate-300">Home</Link>
+                <Link href="/#home" scroll={true} className=" hover:text-slate-500 dark:hover:text-slate-300">Home</Link>
               </li>
               <li>
-                <Link href="#about" scroll={true} className=" hover:text-slate-500 dark:hover:text-slate-300">About Me</Link>
+                <Link href="/#about" scroll={true} className=" hover:text-slate-500 dark:hover:text-slate-300">About Me</Link>
               </li>
               <li>
-                <Link href="#projects" scroll={true} className=" hover:text-slate-500 dark:hover:text-slate-300">Projects</Link>
+                <Link href="/#projects" scroll={true} className=" hover:text-slate-500 dark:hover:text-slate-300">Projects</Link>
               </li>
               <li>
-                <Link href="#contact" scroll={true} className=" hover:text-slate-500 dark:hover:text-slate-300">Contact Me</Link>
+                <Link href="/#contact" scroll={true} className=" hover:text-slate-500 dark:hover:text-slate-300">Contact Me</Link>
               </li>
+              <li>
+                  <Link href="/blog" className="hover:text-slate-500 dark:hover:text-slate-300">
+                    Blog
+                  </Link>
+                </li>
             </ul>
 
             <div className="social mt-4 lg:mt-0 lg:pl-8">
