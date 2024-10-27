@@ -14,7 +14,7 @@ export default function Header() {
     <header className="bg-white dark:bg-zinc-900 shadow-md w-full fixed z-40">
       <div className="container flex items-center justify-between px-6 py-4 text-2xl font-bold text-black dark:text-white">
       <div className="z-50 p-1 rounded-lg bg-white shadow-lg shadow-black dark:shadow-zinc-500">
-        <Image src="/images/logo.jpeg" alt="Logo" width={100} height={100} className="rounded-full"></Image>
+        <Image src="/images/logo.jpeg" alt="Logo" width={80} height={80} className="rounded-full"></Image>
       </div>
 
         {/* Hamburger menu for mobile */}
@@ -61,7 +61,7 @@ export default function Header() {
         <nav
           className={`${
             isOpen ? "block" : "hidden"
-          } lg:flex lg:space-x-6 lg:flex-row flex-col space-y-4 lg:space-y-0 absolute lg:static right-0 top-20 bg-white dark:bg-zinc-900 lg:bg-transparent w-full lg:w-auto lg:items-center text-2xl font-bold text-gray-800 dark:text-gray-200 lg:shadow-none shadow-lg z-50`}
+          } lg:flex lg:space-x-6 lg:flex-row flex-col space-y-4 lg:space-y-0 absolute lg:static right-0 top-20 bg-white dark:bg-zinc-900 lg:bg-transparent w-full lg:w-auto lg:items-center text-2xl font-bold text-gray-800 dark:text-gray-200 lg:shadow-none shadow-lg z-40`}
           >
             <ul className="flex flex-col lg:flex-row lg:space-x-8 space-y-4 lg:space-y-0 text-center lg:text-left">
               <li>
@@ -78,7 +78,7 @@ export default function Header() {
               </li>
             </ul>
 
-            <div className="social mt-4 lg:mt-0">
+            <div className="social mt-4 lg:mt-0 lg:pl-8">
               <ul className="flex space-x-4 justify-center lg:justify-start">
                   <li>
                   <Link href="https://github.com/pinarboztepe" target="_blank" rel="noopener noreferrer">
@@ -90,7 +90,7 @@ export default function Header() {
                     <FontAwesomeIcon icon={faLinkedin} size="lg" className="text-gray-500 hover:text-slate-400 dark:text-gray-200 dark:hover:text-slate-300" />
                   </Link>
                   </li>
-                  <li>
+                  <li className="lg:pl-8">
                     <ThemeToggle />
                   </li>
               </ul>
