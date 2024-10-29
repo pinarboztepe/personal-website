@@ -34,9 +34,9 @@ export default function RootLayout({
         <div className="min-h-screen flex flex-col">
           <ThemeProvider attribute="class" defaultTheme="system">
             <Header />
-            <main className="flex-grow pt-16 p-4">
+            <main className="flex-grow pt-16">
               {/* Your main content goes here */}
-              <div className="container mx-auto">{children}</div>
+              <div className="mx-auto">{children}</div>
                 {" "}
             </main>
             <Footer />

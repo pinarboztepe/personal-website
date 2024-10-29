@@ -10,11 +10,11 @@ import ThemeToggle from "./ThemeToggle";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme } = useTheme();
-  const logoSrc = theme === "dark" ? "/images/LogoDark.png" : "/images/Pinar.svg";
+  const logoSrc = theme === "dark" ? "/images/LogoDarkNewLarge.png" : "/images/LogoNewLight.png";
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white dark:bg-zinc-900 shadow p-4 z-10">
-      <div className="container flex items-center justify-between px-6 py-4 text-2xl font-bold text-black dark:text-white">
+    <header className="fixed top-0 left-0 right-0 bg-white dark:bg-zinc-900 shadow z-10">
+      <div className="container flex items-center justify-between px-6 text-2xl font-bold text-black dark:text-white">
         <div className="z-50 relative bg-white dark:bg-transparent">
           <Image src={logoSrc} alt="Logo" width={80} height={80} className="rounded-full" />
         </div>
@@ -41,7 +41,7 @@ export default function Header() {
         <nav
           className={`${
             isOpen ? "block" : "hidden"
-          } lg:flex lg:space-x-6 lg:flex-row flex-col space-y-4 lg:space-y-0 absolute lg:static right-0 top-20 bg-white dark:bg-zinc-900 lg:bg-transparent w-full lg:w-auto lg:items-center text-2xl font-bold text-gray-800 dark:text-gray-200 lg:shadow-none shadow-lg z-40`}
+          } lg:flex lg:space-x-6 lg:flex-row flex-col space-y-4 lg:space-y-0 absolute lg:static right-0 top-20 bg-white dark:bg-zinc-900 lg:bg-transparent w-full lg:w-auto lg:items-center text-lg font-bold text-gray-800 dark:text-gray-200 lg:shadow-none shadow-lg z-40`}
         >
           <ul className="flex flex-col lg:flex-row lg:space-x-8 space-y-4 lg:space-y-0 text-center lg:text-left">
             <li>

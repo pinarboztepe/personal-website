@@ -5,8 +5,8 @@ import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function Blog() {
     return (
-        <main className="w-full p-6 bg-gray-200 dark:bg-zinc-800">
-            <section className="text-center"> 
+        <main className="w-full p-6 py-10 bg-gray-200 dark:bg-zinc-800">
+            <section className="text-center py-16 min-h-full"> 
                 <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">Blog</h1>
                 <p className="text-lg text-gray-600 dark:text-gray-100 mb-8">
                     Welcome to my blog! Here you&apos;ll find my latest thoughts, ideas, and tutorials on web development, tech, and more.
