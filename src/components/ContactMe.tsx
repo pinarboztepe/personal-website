@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function ContactMe() {
     return (
-        <section id="contact" className="bg-gray-200 dark:bg-zinc-800 py-16">
+        <section id="contact" className="bg-gray-200 dark:bg-zinc-800 py-16 min-h-full">
             <hr className="border-t border-black dark:border-white" />
             <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 mt-16">
                 <div className="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
@@ -16,7 +16,7 @@ export default function ContactMe() {
                 </div>
                 { /*Right side: Image */ }
                 <div className="lg:w-1/2 flex justify-center lg:justify-end">
-                    <Image src="/images/contact.png" alt="Contact Me Picture" width={400} height={400} className="rounded-2xl shadow-lg shadow-black p-1 bg-gray mt-16" />
+                    <Image src="/images/contact.png" alt="Contact Me Picture" width={400} height={400} className="rounded-2xl shadow-lg shadow-black p-1 bg-gray mx-auto" />
                 </div>
             </div>
         </section>

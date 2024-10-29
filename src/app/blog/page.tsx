@@ -1,12 +1,10 @@
 import React from "react";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
 
 export default function Blog() {
     return (
-        <main className="w-full p-6 bg-gray-200 dark:bg-zinc-800">
-            <section className="text-center"> 
+        <main className="w-full p-6 py-10 bg-gray-200 dark:bg-zinc-800">
+            <section className="text-center py-16 min-h-full"> 
                 <h1 className="text-4xl font-bold mb-4 text-black dark:text-white">Blog</h1>
                 <p className="text-lg text-gray-600 dark:text-gray-100 mb-8">
                     Welcome to my blog! Here you&apos;ll find my latest thoughts, ideas, and tutorials on web development, tech, and more.
@@ -48,14 +46,8 @@ export default function Blog() {
                             Read more
                         </span>
                     </Link>
-                </article>
-                
+                </article>    
             </section>
-            <div className="flex justify-center items-center mt-8">
-                <Link href="/" passHref>
-                    <FontAwesomeIcon icon={faArrowUp} size="lg" className="text-gray-500 hover:text-slate-400 dark:text-gray-200 dark:hover:text-slate-300" />
-                </Link>
-            </div>
         </main>
     );
 }

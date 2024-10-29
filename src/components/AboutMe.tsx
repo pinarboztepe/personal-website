@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function AboutMe() {
     return (
-        <section id="about" className="bg-gray-200 dark:bg-zinc-800 py-16">
-            <hr className="border-t border-black dark:border-white mb-8" />
+        <section  className="bg-gray-200 dark:bg-zinc-800 py-16">
+            <hr id="about" className="border-t border-black dark:border-white mb-8" />
             <div className="container mx-auto px-6">
                 <h1 className="text-4xl text-black dark:text-white font-bold text-center mb-16 mt-16">About Me</h1>
                 <div className="flex flex-col items-center lg:flex-row">
