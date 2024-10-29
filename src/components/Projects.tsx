@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Projects() {
     return (
-        <section id="projects" className="py-16 bg-gray-200 dark:bg-zinc-800">
-            <hr className="border-t border-black dark:border-white mb-8" />
+        <section className="py-16 bg-gray-200 dark:bg-zinc-800">
+            <hr  id="projects" className="border-t border-black dark:border-white mb-8" />
             <h1 className="text-4xl font-bold text-center text-black dark:text-white mb-16 mt-16">Projects</h1>
             <div className="container mx-auto flex flex-col lg:flex-row justify-center items-center space-x-8 px-6">
 

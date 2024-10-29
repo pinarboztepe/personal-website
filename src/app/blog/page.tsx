@@ -48,14 +48,8 @@ export default function Blog() {
                             Read more
                         </span>
                     </Link>
-                </article>
-                
+                </article>    
             </section>
-            <div className="flex justify-center items-center mt-8">
-                <Link href="/" passHref>
-                    <FontAwesomeIcon icon={faArrowUp} size="lg" className="text-gray-500 hover:text-slate-400 dark:text-gray-200 dark:hover:text-slate-300" />
-                </Link>
-            </div>
         </main>
     );
 }
