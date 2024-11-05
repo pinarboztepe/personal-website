@@ -4,7 +4,6 @@ import Image from "next/image";
 export default function ContactMe() {
     return (
         <section id="contact" className="bg-gray-200 dark:bg-zinc-800 py-16 min-h-full">
-            <hr className="border-t border-black dark:border-white" />
             <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between px-6 mt-16">
                 <div className="lg:w-1/2 text-center lg:text-left mb-10 lg:mb-0">
                     <h1 className="text-4xl font-bold text-black dark:text-white mb-4 mt-16">Contact Me</h1>
