@@ -1,21 +1,46 @@
+'use client';
 import React from "react";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 
 export default function AboutMe() {
-    return (
-        <section  className="bg-gray-200 dark:bg-zinc-800 py-16">
-            <hr id="about" className="border-t border-black dark:border-white mb-8" />
-            <div className="container mx-auto px-6">
-                <h1 className="text-4xl text-black dark:text-white font-bold text-center mb-16 mt-16">About Me</h1>
-                <div className="flex flex-col items-center lg:flex-row">
-                    <div className="lg:w-1/2 mb-8 lg:mb-0 lg:pr-8 flex justify-center">
-                        <Image src="/images/pinar_b.jpeg" alt="Pinar picture" width={300} height={300} className="rounded-2xl shadow-lg shadow-black p-1 bg-gray" />
-                    </div>
-                    <div className="lg:w-1/2">
-                        <p className="text-xl text-gray-600 dark:text-gray-100">I&apos;m Pinar, a passionate full-stack developer based in London with a knack for blending creativity and technology. When I&apos;m not coding, you can find me indulging in my love for art—painting and sculpting my thoughts into reality. As a drummer, I bring rhythm and energy into my life, and I stay active with various sports to keep my mind and body in sync. Always exploring new challenges and pushing the boundaries of what&apos;s possible!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
+  const { theme } = useTheme();
+  return (
+    <section className="relative py-16 h-screen">
+      <hr id="about" className="border-t border-black dark:border-white mb-8" />
+      <div className="relative h-full w-full flex items-center justify-center bg-gray-200 dark:bg-transparent">
+        {theme === "dark" ? (
+          <Image
+            src="/images/AboutMeLight.png"
+            alt="Pinar picture"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-none min-h-screen opacity-40"
+          />
+        ) : (
+          <Image
+            src="/images/AboutMeDark.png"
+            alt="Pinar picture"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-none min-h-screen opacity-40"
+          />
+        )}
+        <div className="absolute max-w-3xl px-6 text-center">
+          <h1 className="text-5xl text-black dark:text-white font-bold mb-8">
+            About Me
+          </h1>
+          <p className="text-2xl text-gray-600 dark:text-gray-100">
+            I&apos;m Pinar, a passionate full-stack developer based in London
+            with a knack for blending creativity and technology. When I&apos;m
+            not coding, you can find me indulging in my love for art—painting
+            and sculpting my thoughts into reality. As a drummer, I bring rhythm
+            and energy into my life, and I stay active with various sports to
+            keep my mind and body in sync. Always exploring new challenges and
+            pushing the boundaries of what&apos;s possible!
+          </p>
+        </div>
+      </div>
+    </section>
+  );
 }
