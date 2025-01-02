@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { useTheme } from "next-themes";
 import ThemeToggle from "./ThemeToggle";
-
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme } = useTheme();

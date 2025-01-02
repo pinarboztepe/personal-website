@@ -13,6 +13,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        alumni: ['"Alumni Sans Pinstripe"', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        ysabeau: ['"Ysabeau SC"', 'sans-serif'],
+      },
     },
   },
   plugins: [],
