@@ -1,6 +1,9 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Roboto:wght@100;300;500;700&family=Ysabeau+SC:wght@1..1000&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Roboto:wght@100;300;500;700&family=Ysabeau+SC:wght@1..1000&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 :root {
   --background: #ffffff;
@@ -17,7 +20,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
 }
 
 @layer utilities {

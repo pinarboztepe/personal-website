@@ -4,6 +4,7 @@ import Projects from "@/components/Projects";
 import AboutMe from "@/components/AboutMe";
 import ContactMe from "@/components/ContactMe";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import '../app/globals.css';
 
 export default function Home() {
   return (
