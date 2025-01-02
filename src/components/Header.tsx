@@ -1,6 +1,6 @@
 'use client';
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
@@ -9,12 +9,42 @@ import ThemeToggle from "./ThemeToggle";
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  // Use useEffect to handle mounting
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Don't render logo until mounted
+  if (!mounted) {
+    return (
+      <div className="w-20 h-20"></div> // Placeholder aynı boyutta
+    );
+  }
   return (
     <header className="fixed top-0 left-0 right-0 bg-white dark:bg-zinc-900 shadow z-10">
       <div className="flex items-center justify-between px-6 text-2xl font-bold text-black dark:text-white">
         <div className="z-50 relative bg-white dark:bg-transparent">
-          {theme === "dark" ? (<Image src="/images/logo/dark.svg" alt="Logo" width={80} height={80} className="rounded-full" />):
-          <Image src="/images/logo/light.svg" alt="Logo" width={80} height={80} className="rounded-full" />}
+          {theme === "dark" ? (
+            <Image 
+              src="/images/logo/dark.svg" 
+              alt="Logo" 
+              width={80} 
+              height={80} 
+              className="rounded-full" 
+              priority // Logoyu öncelikli olarak yükle
+            />
+          ) : (
+            <Image 
+              src="/images/logo/light.svg" 
+              alt="Logo" 
+              width={80} 
+              height={80} 
+              className="rounded-full"
+              priority // Logoyu öncelikli olarak yükle
+            />
+          )}
         </div>
 
         {/* Hamburger menu for mobile */}
